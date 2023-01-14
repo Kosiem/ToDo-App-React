@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@300&family=Pathway+Gothic+One&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Krub', sans-serif;
+}
+html{
+    height: 100%;
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,137,45,1));
+    
+}
+body{
+    min-height: 100%;
+}
+.Main{
+    display: flex;
+    flex-direction: column;
+}
+.Title{
+    color:white;
+    text-align: center;
+    flex: 100%;
+    font-size: 200%;
+    vertical-align: middle;
+}
+.Send{
+    flex:100%;
+    text-align: center;;
+    animation: 1.2 slide-left
+}
+.Send > * {
+    vertical-align: middle;
+}
+.sendToDo{
+    padding: 20px;
+    width: 25%;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    font-size: 150%;
+    
+}
+@keyframes slide-left {
+    from{
+       margin-left: -300px
+    }
+    to{
+        margin-left: 50px
+    }
+    
+}
+.sendBtn, .saveBtn{
+    padding: 20px;
+    font-size: 250%;
+    color:white;
+    background-color:burlywood;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 50px;
+    animation: 1.5s slide-left 
+}
+
+.sendBtn:hover, .saveBtn:hover{
+    background-color:aquamarine;
+    color:orange;
+    transition: 0.5s all;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.task-container{
+    width: 80%;
+    margin-left: 10%;
+    justify-content: center;
+    color:#00e0ca;
+    font-size: 200%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.tbl{
+    width: 100%;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+tr,td {
+    text-align: center;
+}
+td{
+    color:white;
+    font-size: 2em;
+}
+tr:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.delBtn, .markBtn{
+    padding:40px;
+    width: 120px;
+    color:white;
+    background-color: #6c2d96;
+    border-radius: 20px;
+}
+.actBtn:hover{
+    background-color: #00e0ca;
+    transition: 0.5s all;
+    color: #6c2d96;
+}
